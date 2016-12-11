@@ -1,0 +1,60 @@
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.container {
+    padding: 0 15px;
+}
+.heading {
+    font-family: 'Roboto', sans-serif;
+    color: #505050;
+    text-align: center;
+    font-size: 2.5em;
+}
+.spacer {
+    padding: 5px 0 0 0;
+}
+.icon-huge {
+    font-size: 10em;
+}
+#header
+{
+    height: 900px;
+    margin: 0px 0px 0px 0px;
+    background-image: url('../img/headers/skyline900.jpg');
+    border: 1px solid #C8C8C8;
+}
+#title {
+    margin: 275px 0px 0px 0px;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    text-align: center;
+    font-size: 4.5em;
+}
+#headline {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #000000;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+    font-size: 2.2em;
+}
+#bio {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.4em;
+    color: #000000;
+}
+label.error {
+    font-size: 1em;
+    font-family: 'Source Sans Pro', sans-serif;
+    float: none; 
+    color: #F12323; 
+    padding:  3px 0px 0px 5px; 
+    vertical-align: top; 
+}
+.navbar-nav.nav-justified > li{
+    float: none;
+    margin: 0 auto;
+    font-size: 1.3em;
+}
