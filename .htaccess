@@ -1,7 +1,11 @@
 
 ### BEGIN CLOUDFLARE REWRITE (alexpeterhall.com)
 RewriteEngine on
-RewriteCond %{HTTP_HOST} ^alexpeterhall.com$ [NC]
-RewriteCond %{SERVER_PORT} ^80$
-RewriteRule ^(.*)$ http://www.alexpeterhall.com/$1 [R=301,L]
 ### END CLOUDFLARE REWRITE #########################
+# Always use https for secure connections
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^(.*)$ https://alexpeterhall.com/$1 [R=301,L]
